@@ -9,68 +9,211 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
-<header>
-    <h1>Hello World, I'm Growing!!</h1>
-</header>
-
 <body>
-    <hr>
+    <header>
+        <h1>Hello World, I'm Growing!!</h1>
         <nav>
             <ul>
                 <li><a href="#html">Learning HTML</a></li>
                 <li><a href="#VA">VA learning plans</a></li>
             </ul>
         </nav>
+    </header>
     <hr>
-    <section id="html">
-        <div id="header">
-        <h2>Learning HTML with Dave Gray</h2></div>
-        <p>This is my second web page btw, the <a href="../htmlcourse/index.html" target="_blank">first</a> was a crash
-            course so i just knew the basics. </p>
-        <h3>Course Outline</h3>
-        <ol>
-            <li>Introduction to tools</li>
-            <li></li>
-            <li>Tag Text Basic</li>
-            <li>Lists</li>
-            <li>Links</li>
-            <li>...</li>
-            <li>...</li>
-        </ol>
-        <p>Currently on No 3, Wish me luck</p>
-    </section>
-    <hr>
-    <section id="VA">
-        <!--insert alx va link-->
-        <div id="header">
+    <main>
+        <article id="html">
+            <h2>Learning HTML with Dave Gray</h2>
+            <p>
+                This is my second web page btw, the <a href="../htmlcourse/index.html" target="_blank">first</a> was a
+                crashcourse so i just knew the basics.
+            </p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="#" alt="html5 logo">
+            </section>
+            <section>
+                <h3>Course Outline</h3>
+                <ol>
+                    <li>Introduction to tools</li>
+                    <li>Head element</li>
+                    <li>Tag Text Basic</li>
+                    <li>Lists</li>
+                    <li>Links</li>
+                    <li>images</li>
+                    <li>tags semantics</li>
+                    <li>tables</li>
+                    <li>forms & input</li>
+                </ol>
+
+                <aside>
+                    <details>
+                        <summary>Guess how much <mark>time</mark> do i spend on learning code?</summary>
+                        <p> I spend <time datetime="PT3H">3 hours</time> learning code, no particular time of the day.
+                        </p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>
+                        My learning Schedule
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Hours</th>
+                            <th scope="col"> Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>morning</td>
+                        <td><time datetime="PT3H">3 hours</time></td>
+                        <td>Coding</td>
+                    </tr>
+                    <tr>
+                        <td>morning</td>
+                        <td><time datetime="PT1H">1 hour</time></td>
+                        <td>Resting</td>
+                    </tr>
+                    <tr>
+                        <td>afternoon</td>
+                        <td><time datetime="PT2H">2 hours</time></td>
+                        <td>VA program</td>
+                    </tr>
+                    <tr>
+                        <td>afternoon</td>
+                        <td><time datetime="PT2H">2 hours</time></td>
+                        <td>Exams Prepping</td>
+                    </tr>
+                    <tr>
+                        <td>Evening</td>
+                        <td rowspan="2">Free time</td>
+                        <td>Learning chess</td>
+                    </tr>
+                    <tr>
+                        <td>night</td>
+                        <td>Reading Manhwa</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">This is pretty much how i spend my day.</td>
+                    </tr>
+                </tfoot>
+                </table>
+            </section>
+        </article>
+        <hr>
+        <article id="VA">
             <h2>My Alx <abbr title="Virtual Assitance">VA</abbr> Program</h2>
-        </div>
-        <p>I currently enrolled in this program to improve my skill and also gain new skill needed in the professional
-            world. Especially my communication skills.</p>
-        <h4>My Learning Pattern</h4>
-        <ul>
-            <li>Dedicate 2hours daily for coursework and practice</li>
-            <li>Spend extra 30mins on social platforms communicating with students</li>
-            <li>Practice active learning.</li>
-            <li>Break my reading pattern in blocks 25mins reading and 5mins rest</li>
-        </ul>
-        <p>The completion of these program is not only achieve by the above state but with <em>resilence commitment and
-                consistency</em>, a certification and hopefully a job is gotten.</p>
+            <p>I currently enrolled in this program to improve my skills in the professional
+                world. Especially my communication skills.</p>
+            <section>
+                <h3>My Learning Pattern</h3>
+                <ul>
+                    <li>Dedicate 2hours daily for coursework and practice</li>
+                    <li>Spend extra 30mins on social platforms communicating with students</li>
+                    <li>Practice active learning.</li>
+                    <li>Break my reading pattern in blocks 25mins reading and 5mins rest</li>
+                </ul>
+                <p>The completion of these program is not only achieve by the above state but with <em>resilence,
+                        commitment and consistency</em>, a certification and hopefully a job is gotten.</p>
+            </section>
+            <section>
+                <h3>What to avoid</h3>
+                <dl>
+                    <dt>Procrastination</dt>
+                    <dd>Shifting planned schedule unnecessarily.</dd>
+                    <dt>Self-Doubt</dt>
+                    <dd>Yes, it's human to have it but don't dwell in it, wear a positive hat.</dd>
+                </dl>
+            </section>
+        </article>
+        <h3>Contact me</h3>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Jane" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Doe" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </p>
+                <p>
+                    <label for="number">Phone number</label>
+                    <input type="tel" name="number" id="number" placeholder="2223334455" autocomplete="on" required>
+                    <!--pattern="[0-9]{3}[0-9]{3}[0-9]{4}"-->
+                </p>
+                <p>
+                    <label for="drink">Favourite drink</label>
+                    <select name="drink" id="drink" >
+                        <optgroup label="Sodas">
+                            <option value="fanta">fanta</option>
+                            <option value="coke" selected>coke</option>
+                            <option value="sprite">sprite</option>
+                            <option value="pepsi">pepsi</option>
+                        </optgroup>
+                        <optgroup label="juice">
+                        <option value="chivita">chivita</option>
+                        <option value="chiexotic">chiexotic</option>
+                    </optgroup>
+                        <option value="water">water</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="yearborn">Year of birth</label>
+                    <input type="number" name="yearborn" id="yearborn" step="1" min="1950" max="2020" value="1980">
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    Get to know you
+                </legend>
+                <p>what is your favourite rice meal?</p>
+                <p><input type="radio" id="jr" name="dish"><label for="jr">Jollof Rice</label></p>
+                <p><input type="radio" id="fr" name="dish"><label for="fr">Fried Rice</label></p>
+                <p><input type="radio" id="sr" name="dish"><label for="sr">Stew Rice</label></p>
+                <p><input type="radio" id="or" name="dish"><label for="or">Oil Rice</label></p>
+                
+                <p>What's your ideal pet?</p>
+                <p><input type="checkbox" id="dog" name="dog"><label for="dog">Dog</label></p>
+                <p><input type="checkbox" id="cat" name="cat"><label for="cat">Cat</label></p>
+                <p><input type="checkbox" id="fish" name="fish"><label for="fish">Fish</label></p>
+                <p><input type="checkbox" id="bird" name="bird"><label for="bird">Bird</label></p>
+                <p><input type="checkbox" id="others" name="others"><label for="others">Others</label></p>
+                
+                <!--TODO find how to put condition for the input box to pop up, if others is selected-->
+                <label for="others">If others</label><input type="text">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send a message</legend>
+                <p><label for="message">Message</label></p>
+                <textarea name="message" id="message" cols="30" rows="10">type a message</textarea>
+            </fieldset>
 
-        <h4>What to avoid</h4>
-        <dl>
-            <dt>Procrastination</dt>
-            <dd>Shifting planned schedule unnecessarily.</dd>
-            <dt>Self-Doubt</dt>
-            <dd>Yes, it's human to have it but don't dwell in it, wear a positive hat.</dd>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="#" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+        </form>
 
-        </dl>
-    </section>
-
+    </main>
     <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Freda Otto</a> &gt;&gt;&gt;
-
-    <p><a href="#">Back to top</a></p>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Freda Otto</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
 </body>
 
 </html>

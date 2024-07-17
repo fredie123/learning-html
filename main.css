@@ -1,10 +1,4 @@
-html {
-    font-size: 22px;
-}
-body {
-    background-color: rgb(236, 213, 169);
-    color: rgb(17, 16, 16);
-}
+
 
 a {
     color: rgb(5, 12, 12);
@@ -13,29 +7,15 @@ a:visited {
     color: rgb(212, 101, 10);
 }
 a:hover, a:active {
-color: #eee;
+color: purple;
 }
 
-dl {
-    font-size: 18px;
-}
-header
-{background-color: rgb(212, 101, 10);
-    color: black;
-    padding: 10px;
-    text-align: center;
-}
-#header
-{background-color: rgb(212, 101, 10);
-    color: black;
-    padding: 10px;
-    text-align: left;
-}
 
-section{
-    margin: 20px;
-}
+table, tr, th, tfoot, td, caption
+{
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
 
-body{
-font-size: 18px;
 }
